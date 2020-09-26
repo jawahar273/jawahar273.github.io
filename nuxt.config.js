@@ -1,8 +1,10 @@
 export default {
   mode: 'spa',
+  target: 'static',
   /*
    ** Headers of the page
    */
+  ssr: false,
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -23,7 +25,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/main.scss'],
+  css: ['@/assets/scss/main.scss', '@/assets/styles/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -55,13 +57,12 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend (config, ctx) {}
   },
   pwa: {
     manifest: {
       name: "Jawahar's Personal site",
       short_name: 'Personal Site',
-      start_url: '/',
       display: 'standalone',
       theme_color: '#fff',
       lang: 'en',

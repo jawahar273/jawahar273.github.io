@@ -37,7 +37,6 @@
       </div>
     </article>
     <br />
-    <br />
   </section>
 </template>
 

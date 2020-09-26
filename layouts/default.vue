@@ -18,9 +18,9 @@
     </header>
     <nuxt />
     <footer
-      class="my-4 py-4 w-full text-gray-500  border-solid border-l-8 border-gray-400 "
+      class="my-4 py-4 w-full text-gray-500  border-solid border-l-8 border-gray-400 relative"
     >
-      <div class="flex justify-center my-auto">
+      <div class="flex justify-center my-auto  absolute bottom-0">
         <ul class="flex item-center">
           <li class="mx-3 hover:text-white menu-transition">
             <small>

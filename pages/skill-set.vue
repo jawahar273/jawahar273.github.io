@@ -10,23 +10,6 @@
         />
       </div>
     </div>
-    <!-- <div id="loveto" class="w-full mx-auto my-4">
-      <h2 class="text-4xl mb-4">Love To work on</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="relative">
-          <skill-set-card />
-        </div>
-        <div>
-          <skill-set-card />
-        </div>
-        <div>
-          <skill-set-card />
-        </div>
-        <div>
-          <skill-set-card />
-        </div>
-      </div>
-    </div> -->
   </section>
 </template>
 
