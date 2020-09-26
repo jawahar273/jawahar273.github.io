@@ -1,4 +1,6 @@
-import path  from 'path'
+const path = require('path')
+
+console.log(path.resolve(__dirname, './tailwind.config.js'))
 
 export default {
   mode: 'spa',
@@ -27,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/tailwind.css', '@/assets/scss/main.scss'],
+  css: ['~/assets/css/tailwind.css', '~/assets/scss/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -41,8 +43,9 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-purgecss',
+    '@nuxtjs/tailwindcss'
   ],
   /*
    ** Nuxt.js modules
@@ -59,17 +62,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {},
-    postcss: {
-      plugins: {
-        'postcss-import': {},
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
-        'postcss-nested': {}
-      }
-    },
-    preset: {
-      stage: 1 // see https://tailwindcss.com/docs/using-with-preprocessors#future-css-featuress
-    }
+    extend (config, ctx) {}
   },
   pwa: {
     manifest: {
