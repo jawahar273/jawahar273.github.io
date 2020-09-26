@@ -2,7 +2,7 @@
   <section class="h-full w-full max-w-screen mx-auto container">
     <div id="experienced" class="experienced w-full mx-auto">
       <h2 class="text-4xl mb-4 text-center">Web Development</h2>
-      <div class="grid grid-cols-2 gap-2 lg:gap-4 px-3 lg:px-0">
+      <div class="grid grid-cols-2 gap-1 lg:gap-6 px-3 lg:px-0">
         <skill-set-card
           v-for="(data, index) in experienced"
           :key="index"

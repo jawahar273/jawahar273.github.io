@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-sm w-full lg:max-w-full lg:flex rounded-lg mx-auto transition duration-500 ease-in-out transform hover:-translate-y-2 "
+    class="max-w-sm w-full lg:max-w-full lg:flex rounded-lg mx-auto transition duration-500 ease-in-out transform scale-100 hover:scale-105"
     style="background-color: #4C566A"
   >
     <div

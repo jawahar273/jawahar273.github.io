@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="flex flex-col min-h-screen ">
     <header
       class=" w-full my-4 py-4 relative block  border-r-8 border-gray-400"
     >
@@ -16,11 +16,11 @@
         >
       </nav>
     </header>
-    <nuxt />
+    <nuxt class="flex-grow" />
     <footer
-      class="my-4 py-4 w-full text-gray-500  border-solid border-l-8 border-gray-400 relative"
+      class="my-4 py-4 w-full text-gray-500  border-solid border-l-8 border-gray-400 "
     >
-      <div class="flex justify-center my-auto  absolute bottom-0">
+      <div class="flex justify-center my-auto">
         <ul class="flex item-center">
           <li class="mx-3 hover:text-white menu-transition">
             <small>

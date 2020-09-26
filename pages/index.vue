@@ -16,7 +16,7 @@
             class="w-full md:w-3/4 text-center md:text-left flex flex-col content-center justify-center md:justify-start md:ml-8 my-6 md:mb-6 "
           >
             <span class="text-xl"> Full Stack Developer </span>
-            <h1 class="text-3xl md:text-6xl text-color-white">
+            <h1 class="text-3xl md:text-6xl text-color-white menu-transition">
               Jawahar
             </h1>
             <p>

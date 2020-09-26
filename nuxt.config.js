@@ -1,3 +1,5 @@
+import path  from 'path'
+
 export default {
   mode: 'spa',
   target: 'static',
@@ -25,7 +27,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/main.scss', '@/assets/styles/tailwind.css'],
+  css: ['@/assets/css/tailwind.css', '@/assets/scss/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -57,7 +59,17 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {}
+    extend (config, ctx) {},
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
+        'postcss-nested': {}
+      }
+    },
+    preset: {
+      stage: 1 // see https://tailwindcss.com/docs/using-with-preprocessors#future-css-featuress
+    }
   },
   pwa: {
     manifest: {
