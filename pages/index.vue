@@ -21,7 +21,7 @@
             </h1>
             <p>
               Hi, there I am Jawahar Full Stack Developer. <br />
-              Currently working as Full Stack Developer in Bytize Inc. Love for
+              Currently looking for new position. Love for
               learning and experiment application based on new stack.
             </p>
             <!-- <div class="w-full flex py-2">
